@@ -10,6 +10,7 @@ import FAQ from './Pages/FAQ';
 import Download from './Pages/Download';
 import Privacy_policy from './Pages/Privacy_policy';
 import Disclamer from './Pages/Disclamer';
+import Dashboard from './Pages/Dashboard';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Layout/>}>
          <Route index element={<Navigate to="/home" replace/> } />
          <Route path='/home' element={<Home/>} />
+         <Route path='/dashboard' element={<Dashboard/>} />
          <Route path='/about' element={<About/>} />
          <Route path='/governance' element={<Governance/>} />
          <Route path='/code' element={<Code_of_conduct/>} />

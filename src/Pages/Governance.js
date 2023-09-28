@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material'
 import React from 'react'
-import Banner from '../Components/Banners/Banner'
 import Steering_Working from '../Components/Contents/Steering_Working'
+import Banner from '../Components/Common/Banner'
 
 const Governance = () => {
   return (

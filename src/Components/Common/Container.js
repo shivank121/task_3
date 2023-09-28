@@ -17,4 +17,4 @@ const Container = ({sx={}, ...props }) => {
 
 }
 
-export default Contai
+export default Container;
