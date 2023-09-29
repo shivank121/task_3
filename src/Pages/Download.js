@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material'
 import React from 'react'
-import Swarna_banner from '../Components/Banners/Swarna_banner'
+// import Swarna_banner from '../Components/Banners/Swarna_banner'
 import Swarn_info from '../Components/Contents/Swarn_info'
 
 const Download = () => {
@@ -8,7 +8,7 @@ const Download = () => {
     <div>
       <h1>Download page</h1>
       <Stack>
-        <Swarna_banner/>
+        {/* <Swarna_banner/>  */}
         <Swarn_info/>
       </Stack>
     </div>
