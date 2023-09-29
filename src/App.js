@@ -26,11 +26,11 @@ function App() {
          <Route path='/about' element={<About/>} />
          <Route path='/governance' element={<About/>} />
          <Route path='/code' element={<Code_of_conduct/>} />
-         <Route path='/new' element={<Code_of_conduct/>} />
+         <Route path='/news' element={<Code_of_conduct/>} />
          <Route path='/faqs' element={<FAQ/>} />
          <Route path='/download' element={<FAQ/>} />
          <Route path='/privacy' element={<Privacy_policy/>} />
-         <Route path='/disclamer' element={<Privacy_policy/>} />
+         <Route path='/disclaimer' element={<Privacy_policy/>} />
         </Route>
 
       </Routes>
