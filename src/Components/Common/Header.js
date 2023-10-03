@@ -11,35 +11,38 @@ const Header = () => {
   return (
     
 <>
-  <Box margin="0px 20px 0px 20px"  className={menu ? classes.header : null} >
+  <Box   className={menu ? classes.header : null} padding="8px" >
 
-    <Grid  container spacing={2} padding="15px 0px 0px 0px"  >
+    <Grid  container spacing={2}  >
 
       <Grid item xs={6} sm={6} md={6} xl={6} >
-        <Stack>
-          <img src="./Assets/images/logo_img.png" alt='not loaded' width="150px" />
+        <Stack ml="20px">
+          <img src="./Assets/images/logo_img.png" alt='not loaded' width="270px" />
         </Stack>
       </Grid>
 
 
-      <Grid item xs={6} sm={6} md={6} xl={6} sx={{ }} >
-        <Box sx={{
-        display:"flex", justifyContent:"end", alignItems:"center",
-        marginTop:"8px",
+      <Grid item xs={6} sm={6} md={6}   >
+         <Box sx={{
+        display:"flex",justifyContent:"end", alignItems:"center",
+        marginTop:"30px",
         }}>
-          <Box mr="15px" >
+          <Box 
+          mr="15px" 
+          >
             <Typography sx={{
               color:"#D0AC54", 
-              fontSize:"17px",
-              cursor:"pointer"
+              fontSize:"25px",
+              cursor:"pointer",
+              display:{xs:"none",sm:"inline-block", md:"inline-block"}
 
               }}  
               onClick={()=>setMenu(true)}>  MENU</Typography>
-          </Box>
-          <Box>
+          </Box> 
+          <Box mr="20px" >
             <img 
             style={{cursor:"pointer"}}
-            onClick={()=>setMenu(true)} src='/Assets/Icons/menu_icon.png' alt='not loaded' width="25px" />
+            onClick={()=>setMenu(true)} src='/Assets/Icons/menu_icon.png' alt='not loaded' width="40px" />
           </Box>
 
         </Box>
@@ -115,9 +118,6 @@ const useStyle = makeStyles({
     textAlign:"center",
     margin:"0px",
     padding:"0px",    
-  },
-  abc:{
-  color:"red"
   },
   
   header:{

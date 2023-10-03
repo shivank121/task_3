@@ -9,7 +9,7 @@ const Layout = () => {
     <>
     <Stack>
         <Header/>
-        <Stack ml={0}>
+        <Stack>
             <Outlet/>
         </Stack>
         <Footer/>

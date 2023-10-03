@@ -4,7 +4,7 @@ import React from 'react'
 const Container = ({sx={}, ...props }) => {
   const css ={
     maxWidth:"900px",
-    margin:"0 auto",
+    margin:"20px auto",
     padding:"20px",
     ...sx
   }

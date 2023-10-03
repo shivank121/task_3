@@ -3,7 +3,9 @@ import Home from "../container/home/Home"
 
 const home = () => {
   return (
+
     <Home/>
+    
   )
 }
 
