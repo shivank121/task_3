@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from '../../Components/Common/Banner'
+import Question from '../../Components/Contents/faqs/Question'
 
 const Faqs = () => {
     const css = {
@@ -10,6 +11,7 @@ const Faqs = () => {
   return (
     <>
       <Banner style={css} backgroundImg="/assets/images/faqs_banner_img.png" text4="Swarna Adarsh Abhiyaan- Frequently Asked Questions:" />
+      <Question/>    
     </>
   )
 }

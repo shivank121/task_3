@@ -2,12 +2,13 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Container from "../../Common/Container";
 
-import Investment_Principle_data from '../../../helper/constants'
+import data from '../../../helper/constants'
 import { makeStyles } from "@mui/styles";
 
 
 const Retail = ({HeadingContainer, headingSideLine,textStyle , text}) =>{
-  const [info, setInfo] = useState(Investment_Principle_data)
+
+  const [info, setInfo] = useState(data.Investment_Principle_data)
 const classes = useStyle();
     return(
         <Box sx={{

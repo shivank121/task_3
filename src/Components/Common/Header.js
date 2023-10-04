@@ -83,7 +83,7 @@ const Header = () => {
         <Button className={classes.text} onClick={()=>setMenu(false)}>FAQS</Button>
       </NavLink>
 
-      <NavLink to="" >
+      <NavLink to="faqs" >
         <Button className={classes.text} onClick={()=>setMenu(false)}>DOWNLOADABLE</Button>
       </NavLink>
 
