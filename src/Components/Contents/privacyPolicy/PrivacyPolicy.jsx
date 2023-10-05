@@ -8,16 +8,21 @@ const PrivacyPolicy = () => {
   return (
    <Box>
     <Container>
+    
         <Stack>
         <Box sx={{display:"flex", justifyContent:"center", mb:"50px"}} >
             <Box sx={{ maxWidth:"400px", borderBottom:"3px solid #D0AC54",}} >
-            <Typography variant='h3' color="#D0AC54" >Privacy Policy</Typography>
+            <Typography variant='h3' color="#D0AC54" mb="10px" >Privacy Policy</Typography>
 
             </Box>
         </Box>
         <Typography 
         sx={{color:"#0F4430", fontWeight:"600", fontSize:"15px", mb:"20px", lineHeight:"17px" }} 
-        >The World Gold Council (India) Private Limited (”WGC”) recognises the importance of protecting the privacy of all information provided by visitors of this website. We have created the following policy guidelines with a fundamental respect for our visitors’ right to privacy and to guide our relationships with our visitors.</Typography>
+        >The World Gold Council (India) Private Limited (”WGC”) recognises the importance of protecting the privacy of all information provided by visitors of this website. We have created the following policy guidelines with a fundamental respect for our visitors’ right to privacy and to guide our relationships with our visitors.
+        </Typography>
+
+        <Box sx={{ height:"1.5px", backgroundColor:"#0F4430",mb:"20px"  }} ></Box>
+        {/* <Box sx={{height:"3px, color:"red"}} /> */}
 
         <Typography variant='h5' sx={{color:"#0F4430", mb:"15px" }} >Information Collected by the World Gold Council (India)</Typography>
 
@@ -69,7 +74,10 @@ const PrivacyPolicy = () => {
 const useStyle = makeStyles({
     para:{
         marginBottom:"35px",
-        lineHeight:"18px"
+        lineHeight:"15px",
+        fontSize:"12px",
+        color:"#231F20",
+        fontWeight:"500"
     }
 })
 

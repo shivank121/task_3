@@ -1,12 +1,13 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
-const Banner = ({ backgroundImg, style, text1, text2, text3, text4 }) => {
+const Banner = ({ backgroundImg, style, text1, text2, text3, text4,borderBottomStyle,pageImg  }) => {
 
   const bannerStyle = {
     backgroundImage:`url(${backgroundImg})`,
     backgroundSize:{xs:"cover",md:"cover",sm:"cover"},
-    height:{xs:"28vh", sm:"50vh",md:"100vh"},
+    height:{xs:"45vh", sm:"100vh",md:"100vh"},
+    maxWidth:{xs:"100vw"},
     display:"flex", alignItems:"center", justifyContent:"space-evenly",
     backgroundRepeat:"no-repeat",
   }
@@ -17,7 +18,7 @@ const Banner = ({ backgroundImg, style, text1, text2, text3, text4 }) => {
     sx={bannerStyle}
     >
     <Box sx={style}>
-      <Box sx={{ }} >
+      <Box sx={borderBottomStyle} >
         <Typography sx={{fontSize:"23px", color:"white",
         '@media(max-width:"600px")':{
              fontSize:"5px"
@@ -26,13 +27,22 @@ const Banner = ({ backgroundImg, style, text1, text2, text3, text4 }) => {
         <Typography  sx={{fontSize:"35px", color:"#D0AC54"  }} >{text4}</Typography>
       </Box>
     </Box>
-    
-      {/* <Typography
-        sx={{
-          color: 'white',fontSize: { xs: '10px', sm: '23px', md: '24px', xl: '70px' },}}>byyyy </Typography>
+     
+     <Grid>
+      <Grid item xs={12}  md={12} sm={12}
+      sx={{
+        position:"absolute", 
+        top:{xs:"37%", sm:"70%", md:"75%" }, 
+        right:"10%"
+      }} >
+         <Box
+          // sx={{position:"absolute", top:"70%", right:"10%"}} 
+          >
+           <img src={pageImg} alt='note loaded' width="150px" />
+            </Box>
 
-        <Typography sx={{ color: '#D0AC54', fontSize: { xs: '20px', sm: '40px', md: '40px', xl: '70px' } }}>
-         hiiiii </Typography> */}
+      </Grid>
+     </Grid>
     
     </Box>
   );

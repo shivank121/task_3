@@ -10,9 +10,15 @@ const About = () => {
         right:{xs:"3%",md:"10%"},
   } 
 
+
+  const borderBottomStyle = {
+    borderBottom:"2px solid #D0AC54",
+    // borderRadius:"3px"
+  } 
+
   return (
     <>
-        <Banner style={css} backgroundImg="/assets/images/about_banner_img.png" text4="About SAA" />
+        <Banner style={css} borderBottomStyle={borderBottomStyle} backgroundImg="/assets/images/about_banner_img.png" text4="About SAA" />
         <Streeing_committee/>
     </>
   )

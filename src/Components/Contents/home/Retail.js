@@ -33,10 +33,13 @@ const classes = useStyle();
 
                         return(
                             
-                            <Box  key={id} sx={{maxWidth:{md:"200px", display:'flex', flexDirection:"column", justifyContent:"center", textAlign:"center" }}}  >
-                                <Box m="30px 20px 30px 20px" > <img className={classes.images} src={img} alt="not loaded"/> 
+                            <Box  key={id} sx={{maxWidth:{md:"200px"}, display:'flex', flexDirection:"column", textAlign:"center" }}  >
+                                <Box m="30px 20px 0px 20px" >
+                                  <img className={classes.images} src={img} alt="not loaded" /> 
                                 </Box>
-                                <Box m="20px 0px" > <Typography sx={{color:"#D0AC54" , textAlign:"center"}} >{name}</Typography></Box>
+                                <Box m="20px 0px"> 
+                                <Typography sx={{color:"#D0AC54" ,}} >{name}</Typography>
+                                </Box>
                                 
                             </Box>
                         
@@ -54,7 +57,7 @@ const classes = useStyle();
 
 const useStyle = makeStyles({
     images:{
-        width:"130px",
+        width:"100px",
         '@media(max-width':{
             width:"50px"
         },

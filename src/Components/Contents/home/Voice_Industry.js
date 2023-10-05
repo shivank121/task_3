@@ -40,16 +40,14 @@ const Voice_Industry = ({HeadingContainer, headingSideLine,textStyle , text}) =>
           <Typography sx={{textAlign:"center", lineHeight:"20px" , fontSize:"13px", mb:"70px"  }} >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Typography>
         </Box>
          
-         <Box sx={{display:'flex', justifyContent:"space-around", mb:"70px"}} >
+         <Box sx={{display:'flex', justifyContent:"space-around", flexWrap:"wrap",  mb:"70px"}} >
           {
             industryData.map((Data)=>{
 
               return(
-                <Box>
-                  <Stack>
+                <Box mb="30px" >                  
                     <img src={Data.img} alt='not loaded' width="200px"/>
                     <Typography textAlign="center" maxWidth="200px" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</Typography>
-                  </Stack>
                 </Box>
               )
             })

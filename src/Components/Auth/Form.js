@@ -68,7 +68,7 @@ const Form = ({ HeadingContainer, headingSideLine,textStyle , text }) => {
 </Grid>
  
  <Box sx={{maxWidth:"200px", height:"50px", bgcolor:"#F7F7F7", border:"2px solid #F7F7F7", marginBottom:"20px", mt:"50px"}} > <Checkbox/> <span> I’m not a robot</span> <img src='/assets/Icons/captcha_icon.png' alt='not loaded' width="33px" /> </Box>
- <Box sx={{maxWidth:"170px", backgroundColor:"#D0AC54", color:"white", textAlign:"center"}} >PARTICIPATE</Box>
+ <Box sx={{maxWidth:"170px", backgroundColor:"#D0AC54", color:"white", textAlign:"center", padding:"7px"}} >PARTICIPATE</Box>
  </Container>
       
     </Box>      

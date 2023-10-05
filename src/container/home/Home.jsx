@@ -12,7 +12,7 @@ import About from '../../Components/Contents/home/About'
 const Home = () => {
     const css ={
         maxWidth:"500px", position:"absolute", 
-        right:{xs:"3%",md:"25%"},
+        right:{xs:"3%",md:"26%"},
     } 
 
     const HeadingContainer ={
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner style={css} backgroundImg="/assets/images/banner_img.png" text1="Working" text2="together," text3="on principles" text4="Isi Mey Faida Hai."/>
+      <Banner style={css} pageImg="/assets/images/bannerPageImg.png" backgroundImg="/assets/images/banner_img.png" text1="Working" text2="together," text3="on principles" text4="Isi Mey Faida Hai."/>
       <About HeadingContainer={HeadingContainer} headingSideLine={headingSideLine} textStyle={textStyle} text="About Swarna Adarsh Abhiyaan"  />
       <Retail HeadingContainer={HeadingContainer} headingSideLine={headingSideLine} textStyle={textStyle} text="Retail Gold Investment Principles" />
       <Code_Conduct HeadingContainer={HeadingContainer} headingSideLine={headingSideLine} textStyle={textStyle} text="Code of Conduct" />
