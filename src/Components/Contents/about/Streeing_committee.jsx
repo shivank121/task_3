@@ -36,31 +36,27 @@ const Streeing_committee = () => {
             <Box mb="30px">
                 <Typography sx={{color:"#322666", fontSize:"20px", textAlign:"center" }} >Members</Typography>
             </Box>
-            
+          
+          
+
+
+
             <Box sx={{backgroundColor:"#322666",paddingBottom:"10px", }} >
-                <Grid container spacing={2} sx={{margin:"10px auto"}} >
+                <Grid container spacing={2} sx={{margin:"5px auto"}} >
                     <Grid item xs={3} sm={3} md={3}>
-                        <Stack>
-                            <Box className={classes.text} >STAKEHOLDER CATEGORY</Box>
-                        </Stack>
+                            <p className={classes.heading} >STAKEHOLDER CATEGORY</p>
                     </Grid>
                     <Grid item xs={3} sm={3} md={3}>
-                        <Stack>
-                            <Box className={classes.text}>ORGANIZATION</Box>
-                        </Stack>
+                            <p className={classes.heading}>ORGANIZATION</p>
                     </Grid>
                     <Grid item xs={3} sm={3} md={3}>
-                        <Stack>
-                            <Box className={classes.text}>NAME</Box>
-                        </Stack>
+                            <p className={classes.heading}>NAME</p>
                     </Grid>
                     <Grid item xs={3} sm={3} md={3}>
-                        <Stack>
-                            <Box className={classes.text}>DESIGNATION</Box>
-                        </Stack>
+                            <p className={classes.heading}>DESIGNATION</p>
                     </Grid>
                 </Grid>
-            </Box>
+            </Box> 
 
 
             <Box sx={{paddingBottom:"10px", }} >
@@ -284,11 +280,21 @@ const Streeing_committee = () => {
 
 const useStyle = makeStyles ({
 
-    text:{
+    heading:{
         color:"white",
-        fontSize:"15px",
-        // textAlign:"center"
+        fontSize:"8px",
+        // '@media(maxWidth:"780px")' : {
+        //         fontSize: '5px'
+        //   }
     },
+    
+    // heading:{
+    //     fontSize:"5",
+    //     color:"white",
+    //     '@media( max-width:"600px" )':{
+    //         fontSize:"5px"
+    //     }
+    // },
 
     data:{
         // textAlign:"center"

@@ -13,6 +13,8 @@ const Banner = ({ backgroundImg, style, text1, text2, text3, text4,borderBottomS
   }
 
 
+
+
   return (
     <Box 
     sx={bannerStyle}
@@ -35,7 +37,8 @@ const Banner = ({ backgroundImg, style, text1, text2, text3, text4,borderBottomS
         top:{xs:"37%", sm:"70%", md:"75%" }, 
         right:"10%"
       }} >
-         <Box
+         <Box 
+         
           // sx={{position:"absolute", top:"70%", right:"10%"}} 
           >
            <img src={pageImg} alt='note loaded' width="150px" />

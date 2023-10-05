@@ -33,7 +33,7 @@ import Voice_Industry from "../Components/Contents/home/Voice_Industry";
         },
         {
             id:7,
-            img:"/assets/images/operational.png",
+            img:"/assets/images/lastimage.png",
             name:"OPERATIONAL PROFESSIONALISM"
         },
     ],
